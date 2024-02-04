@@ -13,7 +13,8 @@
       <div class="room-name">
         <a href="#">
           <%# room_user.room.name %>
-          <%= room.name %>
+          <%# room.name %>
+          <%= link_to room.name, room_messages_path(room) %>
         </a>
       </div>
     </div>
